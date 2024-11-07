@@ -5,8 +5,8 @@ import copy from 'rollup-plugin-copy';
 export default {
   input: 'scripts/extract-content.js',
   output: {
-    dir: 'dist/scripts',
-    format: 'cjs'
+    file: 'dist/scripts/extract-content.js',
+    format: 'iife'
   },
   plugins: [
     commonjs(),
